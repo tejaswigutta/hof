@@ -1,23 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import DisplayAll from "./components/DisplayAll.js"
+import UserType from "./components/UserType.js"
+import FilterNames from "./components/FilterNames.js"
+import FilterAge from "./components/FilterAge.js"
+import TotalYears from "./components/TotalYears.js"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DisplayAll />
+      <UserType />
+      <FilterNames />
+      <FilterAge />
+      <TotalYears />
     </div>
   );
 }
